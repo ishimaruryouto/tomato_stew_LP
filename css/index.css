@@ -1,0 +1,64 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Kiwi Maru";
+}
+
+.mainvisual_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 72px;
+
+    .product_name {
+        display: flex;
+        align-items: center;
+
+        img {
+            width: 56px;
+            height: 51px;
+        }
+
+        p {
+            font-size: 4.8rem;
+        }
+    }
+
+    h1 {
+        display: inline;
+        font-size: 4.8rem;
+        border-bottom: 5px solid #FFDB4A;
+
+    }
+
+    .instruction {
+        font-size: 2.4rem;
+        margin-top: 24px;
+    }
+
+    .store_wrap {
+        margin-top: 40px;
+        display: flex;
+        justify-content: left;
+        gap: 30px;
+
+        img {
+            &:nth-child(1) {
+                width: 177px;
+                height: 65px;
+            }
+
+            &:nth-child(2) {
+                width: 195px;
+                height: 62px;
+            }
+        }
+    }
+
+    img {
+        width: 377px;
+        height: 398px;
+    }
+}
