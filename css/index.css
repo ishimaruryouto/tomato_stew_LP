@@ -4,8 +4,11 @@ html {
 
 body {
     font-family: "Kiwi Maru";
+    padding: 0;
+    margin: 0;
 }
 
+/* メインビジュアルのスタイル */
 .mainvisual_wrap {
     display: flex;
     align-items: center;
@@ -60,5 +63,344 @@ body {
     img {
         width: 377px;
         height: 398px;
+    }
+}
+
+/* にゃんコネクトの説明のスタイル */
+.instruction_wrap {
+    background: #FFDB4A;
+    padding: 112px 200px;
+    margin-top: 90px;
+}
+
+.instruction_item {
+    /* width: 1040px;
+    height: 432px; */
+    margin: 0 auto;
+    background: #fefefe;
+    padding: 14px;
+    border-radius: 20px;
+
+    .instruction_txt {
+        width: 1020px;
+        height: 405px;
+        border: 5px solid #222;
+        border-radius: 20px;
+        margin: 0 auto;
+        background: #fefefe;
+
+
+        .instruction_head {
+            display: flex;
+            align-items: center;
+            width: fit-content;
+            margin: 0 auto;
+            margin-top: 50px;
+
+            img {
+                width: 56px;
+                height: 51px;
+            }
+
+            h2 {
+                font-size: 3.2rem;
+                border-bottom: 5px solid #FFDB4A;
+            }
+        }
+
+        p {
+            width: 660px;
+            font-size: 2.4rem;
+            margin: 0 auto;
+            text-align: center;
+            margin-top: 16px;
+        }
+    }
+}
+
+/* 猫の足跡のイラストのスタイル */
+.footprints_wrap {
+    position: relative;
+
+    .footprints {
+        position: absolute;
+        width: 103px;
+        height: 96px;
+        background: url("/img/footprints.png") no-repeat bottom right;
+        background-size: contain;
+
+        &:nth-child(1) {
+            bottom: -30px;
+            right: -130px;
+        }
+
+        &:nth-child(2) {
+            bottom: -100px;
+            right: -40px;
+        }
+    }
+}
+
+/* ダウンロードセクションのスタイル */
+.download_wrap {
+    position: relative;
+    width: 100vw;
+    height: 320px;
+    background: url("/img/download_bg.png") no-repeat center / cover;
+    margin-top: 125px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-color: rgba(2, 2, 2, .4);
+        z-index: 0;
+    }
+
+    h2 {
+        position: relative;
+        color: #fefefe;
+        font-size: 3.6rem;
+        text-align: center;
+        padding-top: 96px;
+        z-index: 1;
+    }
+
+    .store_wrap {
+        position: relative;
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        gap: 248px;
+        z-index: 1;
+
+        img {
+            &:nth-child(1) {
+                width: 177px;
+                height: 65px;
+            }
+
+            &:nth-child(2) {
+                width: 195px;
+                height: 62px;
+            }
+        }
+    }
+
+    img {
+        width: 377px;
+        height: 398px;
+    }
+
+    /* 最後のダウンロードセクションのスタイル */
+    &:last-of-type {
+        margin-top: 0;
+    }
+}
+
+/* 猫の紹介セクション */
+.introduction_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 128px;
+    border: solid #FFDB4A;
+    border-width: 40px 120px;
+    padding: 30px 0;
+    margin-top: 142px;
+
+    .cat_introduction {
+        width: 480px;
+
+        h2 {
+            display: inline;
+            font-size: 3.2rem;
+            border-bottom: 3px solid #FFDB4A;
+        }
+
+        p {
+            width: 100%;
+            font-size: 3.2rem;
+            background: #FFF7CA;
+        }
+
+        .cat_face {
+            display: flex;
+
+            img {
+                width: 112px;
+                height: 80px;
+                margin-left: 16px;
+            }
+        }
+    }
+
+    .cat_all_wrap {
+        img {
+            width: 320px;
+            height: 367px;
+            display: block;
+        }
+    }
+}
+
+/* 使い方説明セクション */
+.how_to_use_wrap {
+    margin-top: 96px;
+
+    h2 {
+        width: fit-content;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 3.2rem;
+        border-bottom: 3px solid #FFDB4A;
+        /* border: 1px solid tomato; */
+    }
+
+    /* 使い方セクションの猫の足跡 */
+    .how_footprints_wrap {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+
+        .footprints {
+            position: absolute;
+            width: 110px;
+            height: 102px;
+            background: url("/img/footprints.png") no-repeat center / contain;
+
+            &:nth-child(1) {
+                left: 180px;
+                top: 500px;
+            }
+
+            &:nth-child(2) {
+                left: 100px;
+                top: 620px;
+            }
+        }
+
+        &:last-of-type {
+            .footprints {
+                position: absolute;
+                width: 110px;
+                height: 102px;
+                background: url("/img/footprints.png") no-repeat center / contain;
+
+                &:nth-child(1) {
+                    /* left: -100px;
+                    top: -500px;
+                    border: 1px solid tomato; */
+                }
+
+                &:nth-child(2) {
+                    right: 1500px;
+                    top: 0px;
+                    border: 1px solid tomato;
+
+                }
+
+            }
+        }
+
+
+    }
+
+
+    /* 使い方説明の3つのポイント */
+    .use_points_wrap {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 112px;
+        gap: 48px;
+
+        img {
+            position: relative;
+            width: 364px;
+            height: 364px;
+            z-index: -10;
+        }
+
+        h3 {
+            position: absolute;
+            left: 550px;
+            top: 40px;
+            font-size: 2.4rem;
+            background: #FFDB4A;
+            border: 4px solid #222;
+            border-radius: 20px;
+            padding: 14px 32px;
+            z-index: 2;
+        }
+
+        p {
+            position: relative;
+            font-size: 1.6rem;
+            margin-left: -140px;
+            background: #fff;
+            border: 3px solid #222;
+            border-radius: 20px;
+            padding: 40px 33px 16px 56px;
+            line-height: 1.9;
+            width: min(565px, 100%);
+
+            &::before,
+            &::after {
+                content: "";
+                position: absolute;
+                inset: 0;
+                border: 3px solid #222;
+                border-radius: 20px;
+                background: #fff;
+                z-index: -1;
+            }
+
+            &::before {
+                transform: translate(17px, 18px);
+            }
+
+            &::after {
+                transform: translate(11px, 10px);
+            }
+        }
+
+        &:nth-of-type(3) {
+            img {
+                top: -100px;
+                left: 500px;
+            }
+
+            h3 {
+                left: 800px;
+                top: 140px;
+            }
+
+            p {
+                top: 90px;
+                left: 220px;
+                width: min(468px, 100%);
+            }
+        }
+
+        &:nth-of-type(4) {
+            img {
+                top: -200px;
+                left: 50px;
+            }
+
+            h3 {
+                left: 250px;
+            }
+
+            p {
+                top: -20px;
+                left: -330px;
+                width: min(468px, 100%);
+
+            }
+        }
     }
 }
